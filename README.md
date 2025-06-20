@@ -24,14 +24,14 @@ Each topic is organized into its own folder, and each file contains clean, comme
 ## 🗂️ Folder Structure
 
 DSA-Cpp/
-├── 1.Patterns/
-├── 2.Arrays/
-├── 3.Searching And Sorting/
-├── 4.Sorting Algorithms/
-├── 5.Char Arrays & Strings/
-├── 6.Basics Maths & Pointers/
-├── 7.Recursion/
-└── 8.DnC & BackTracking/
+1.Patterns/
+2.Arrays/
+3.Searching And Sorting/
+4.Sorting Algorithms/
+5.Char Arrays & Strings/
+6.Basics Maths & Pointers/
+7.Recursion/
+8.DnC & BackTracking/
 
 Each folder contains `.cpp` files with related problems and solutions.
 
