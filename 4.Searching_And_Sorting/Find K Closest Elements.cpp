@@ -1,5 +1,6 @@
 //LEETCODE #658 problem link:https://leetcode.com/problems/find-k-closest-elements/
-//Logic: Binary Search, Two Pointer approach
+//Approach: 1.Two Pointer approach
+//          2.Binary Search + Two Pointer
 class Solution {
 public:
     int LowerBound(vector<int>& arr, int x)
