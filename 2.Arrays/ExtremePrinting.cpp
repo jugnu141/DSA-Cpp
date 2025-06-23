@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+void output(int arr[],int n)
+{
+    int i=0;
+    int j=n-1;
+
+    while(i<=j)
+    {
+        if(i==j)
+        {
+            //print only 1 time
+            cout<<arr[i]<<" ";
+            i++;
+        }
+        else{
+        cout<<arr[i]<<" ";
+        i++;
+        cout<<arr[j]<<" ";
+        j--;
+        }
+    }
+}
+int main()
+{
+    int arr[]={10,20,30,40,50,60,70,80,90};
+
+    int size=9;
+    output(arr,size);
+
+    return 0;
+}
