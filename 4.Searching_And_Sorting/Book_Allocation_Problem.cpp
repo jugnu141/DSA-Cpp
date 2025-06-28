@@ -1,4 +1,5 @@
-//GFG Book Allocation problem(VVV Imp Ques)
+//GFG Book Allocation problem(VVV Imp Ques) 
+//https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1
 //Logic: Binary Search in Search Space
 
 class Solution {
