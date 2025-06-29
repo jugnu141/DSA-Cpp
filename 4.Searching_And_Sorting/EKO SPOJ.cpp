@@ -1,5 +1,5 @@
 //https://www.spoj.com/problems/EKO/
-//Binary Search approah
+
 #include<iostream>
 #include<vector>
 #include<algorithm>
@@ -9,7 +9,7 @@ bool isPossibleSolution(vector<long long int>&trees,long long int m,
 long long mid)
 {
     long long int woodcollected=0;
-    for(int i=0; i<trees.size(); i++)
+    for(long long int i=0; i<trees.size(); i++)
     {
         if(trees[i] > mid)
             woodcollected += trees[i]-mid;
@@ -45,19 +45,20 @@ int main()
   long long int n,m;
   // n-> no of trees, 
   // m-> requred length of wood
-  cout<<"number of trees : ";
+  //cout<<"number of trees : ";
   cin>>n;
-  cout<<"Required length of wood: ";
+  //cout<<"Required length of wood: ";
   cin>>m;
   vector<long long int>trees;
-  cout<<"Enter height of each tree "<<endl;
+  //cout<<"Enter height of each tree "<<endl;
   while(n--){
     long long int height;
     cin>>height;
     trees.push_back(height);
   }
 
-  long long int ans=Saw_Blade_Height(trees,m);
-  cout<<"Height of SawBlade is : "<<ans;
+  cout<<Saw_Blade_Height(trees,m);
+  //long long int ans=Saw_Blade_Height(trees,m);
+  //cout<<"Height of SawBlade is : "<<ans;
   return 0;
 }
