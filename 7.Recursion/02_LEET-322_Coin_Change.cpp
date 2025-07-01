@@ -2,7 +2,39 @@
 //My Approach
 //Tutorial Approach
 
-//My Aprroach
+//My Approach-1
+class Solution {
+public:
+    void solve(vector<int>& coins,int i,int amount,long long int sum,int count,int &leastCount)
+    {
+        //base case
+        if(sum==amount)
+        {
+            leastCount=min(leastCount,count);
+            return;
+        }
+        if(i>=coins.size() || sum>=amount )
+            return;
+        //include
+        solve(coins,i,amount,sum+coins[i],count+1,leastCount);
+        //exclude
+        solve(coins,i+1,amount,sum,count,leastCount);
+    }
+
+    int coinChange(vector<int>& coins, int amount) {
+        int i=0;
+        long long int sum=0;
+        int count=0;
+        int leastCount=INT_MAX;
+        solve(coins,i,amount,sum,count,leastCount);
+        if(leastCount==INT_MAX)
+            return -1;
+        return leastCount;
+
+    }
+};
+
+//My Aprroach-2
 class Solution {
 public:
     void solve(vector<int>& coins,vector<int>&ans,int i,int amount,long long int sum,int a)
