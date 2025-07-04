@@ -22,7 +22,6 @@ public:
     int maxProfit(vector<int>& prices) {
         int i=0;
         int maxprofit=INT_MIN;
-        //int maxprice=INT_MIN;
         int minprice=INT_MAX;
         solve(prices,maxprofit,minprice,i);
         if(maxprofit <= 0)
