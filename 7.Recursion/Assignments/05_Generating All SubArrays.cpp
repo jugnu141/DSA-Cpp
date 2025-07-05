@@ -1,6 +1,6 @@
 //GFG https://www.geeksforgeeks.org/problems/generating-all-subarrays/1
 
-//My Solution
+//My Solution - T.C: O(n^3)
 // User function Template for C++
 #include<vector>
 using namespace std;
