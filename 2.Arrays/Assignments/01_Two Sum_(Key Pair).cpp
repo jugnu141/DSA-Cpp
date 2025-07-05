@@ -31,17 +31,23 @@ class Solution {
     bool MappingApproach(vector<int>& arr, int target)
     {
         // Use Mapping : For O(n) T.C
-        unordered_map<int,bool>solve; //False is by Default bool
+        unordered_map<int,bool>solve; //solve map is vacant initially
         for(int i=0; i<arr.size(); i++)
         {
             int complement=target-arr[i];
             if(solve.find(complement) != solve.end())
                 //Complement key exist
                 return true;
-            solve[arr[i]]=true;
+            solve[arr[i]]=true; //insert in map
         }
         return false;
-    }
+
+      It ensures:
+
+// You're not checking a number against itself (because arr[i] hasn't been inserted yet).
+// Only allows valid pairs like:
+// If you've already seen 3, and now see target - 3 = 2, you check solve[2].
+//     }
   
     bool twoSum(vector<int>& arr, int target) {
         // O(n^2)-- Nested Loop-- NOT Optimized
